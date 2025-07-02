@@ -6,7 +6,7 @@ const contenedorCarrito = document.getElementById("carrito");
 const total = document.getElementById("total");
 const formulario = document.getElementById("formularioCompra");
 
-fetch("../data/productos.json")
+fetch("productos.json")
   .then(response => response.json())
   .then(data => {
     productos = data;
